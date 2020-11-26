@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'org.glassfish:javax.json:1.1.4'
+    implementation 'com.discord4j:discord4j-core:3.1.0'
+    implementation 'net.sourceforge.htmlunit:htmlunit:2.43.0'
+    implementation 'org.apache.commons:commons-lang3:3.11'
+    testImplementation 'junit:junit:4.13'
+}
+
+application {
+    mainClassName = 'aq3d.bot.AQ3DBot'
+}
