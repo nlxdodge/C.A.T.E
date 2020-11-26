@@ -1,5 +1,7 @@
 # C.A.T.E Your friendly AQ3D Discord bot!
 
+![C.A.T.E](https://raw.githubusercontent.com/nlxdodge/C.A.T.E/master/resources/bot-log.png)
+
 ## Commands:
 
 ```yaml
