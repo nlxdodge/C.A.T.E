@@ -57,11 +57,10 @@ public class ServerApi {
     private void parseServerInfo(URL url, StringBuilder output) {
         try (InputStream is = url.openStream()) {
             ObjectMapper objectMapper = new ObjectMapper();
-            List<Server> servers = objectMapper.readValue(is, new TypeReference<List<Server>>() {
-            });
+            List<Server> servers = objectMapper.readValue(is, new TypeReference<>() {});
             for (Server server : servers) {
                 if (Boolean.FALSE.equals(server.exclude())) {
-                    output.append(server + "\n");
+                    output.append(server).append("\n");
                 }
             }
         } catch (Exception e) {

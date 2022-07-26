@@ -1,12 +1,12 @@
 package aq3d.bot.api;
 
-import static org.junit.Assert.assertFalse;
 
 import java.util.logging.Logger;
 
-import org.junit.Test;
 
 import aq3d.bot.AQ3DBot;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class ServerApiTest {
 
@@ -16,6 +16,6 @@ public class ServerApiTest {
     @Test
     public void getServerData() {
         String output = api.getServerInfo();
-        assertFalse(output.isBlank());
+        Assertions.assertFalse(output.isBlank());
     }
 }
